@@ -1,4 +1,4 @@
-name: longzhuzhu-coder-sync
+name: longzhuzhu-sync
 on:
   schedule:
     - cron: '17 */3 * * *'
