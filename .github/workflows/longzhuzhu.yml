@@ -6,7 +6,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-longzhuzhu-coder-main
+    types: sync-nianyuguai-longzhuzhu
 jobs:
   repo-sync:
     env:
