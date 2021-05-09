@@ -11,7 +11,7 @@ fi
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="monk LongZhuZhu"
+author_list="monk_ichenzhe monk_normal LongZhuZhu"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
@@ -19,15 +19,17 @@ author_list="monk LongZhuZhu"
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
 
 scripts_base_url_1=https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/i-chenzhe
-scripts_base_url_2=https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/
+scripts_base_url_2=https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/normal
+scripts_base_url_3=https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/
 
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
-my_scripts_list_1="z_mother_jump.js z_wish.js"
-my_scripts_list_2="jd_super_redrain.js jd_half_redrain.js"
+my_scripts_list_1="z_fanslove.js z_health_community.js z_health_energy.js z_marketLottery.js z_shake.js z_shop_captain.js z_xmf.js z_mother_jump.js z_wish.js"
+my_scripts_list_2="monk_inter_shop_sign.js monk_shop_follow_sku.js monk_shop_lottery.js adolf_oppo.js"
+my_scripts_list_3="jd_super_redrain.js jd_half_redrain.js"
 
 ##############################  随  机  函  数  ##############################
 rand() {
