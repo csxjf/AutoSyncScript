@@ -11,7 +11,7 @@ fi
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="monk_ichenzhe monk_normal LongZhuZhu jddj wxxk DD"
+author_list="monk_ichenzhe monk_normal LongZhuZhu jddj wxxk DD zbcj"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
@@ -24,6 +24,7 @@ scripts_base_url_3=https://raw.githubusercontent.com/csxjf/AutoSyncScript/longzh
 scripts_base_url_4=https://raw.githubusercontent.com/csxjf/AutoSyncScript/passerby-b/
 scripts_base_url_5=https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/car/
 scripts_base_url_6=https://raw.githubusercontent.com/passerby-b/didi_fruit/main/
+scripts_base_url_7=https://raw.githubusercontent.com/xbt370/Collection/master/Script/
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
@@ -35,6 +36,8 @@ my_scripts_list_3="jd_super_redrain.js jd_half_redrain.js"
 my_scripts_list_4="jddj_bean.js jddj_cookie.js jddj_fruit.js jddj_fruit_collectWater.js jddj_getPoints.js jddj_plantBeans.js"
 my_scripts_list_5="adolf_ETIP.js adolf_haier.js monk_shop_add_to_car.js"
 my_scripts_list_6="dd_fruit.js"
+my_scripts_list_7="jd_live_lottery_social.js"
+
 ##############################  随  机  函  数  ##############################
 rand() {
   min=$1
