@@ -33,7 +33,7 @@ my_scripts_list_1="z_fanslove.js z_health_community.js z_health_energy.js z_mark
 my_scripts_list_2="monk_inter_shop_sign.js monk_shop_follow_sku.js monk_shop_lottery.js adolf_oppo.js adolf_pk.js"
 my_scripts_list_3="jd_super_redrain.js jd_half_redrain.js"
 my_scripts_list_4="jddj_bean.js jddj_cookie.js jddj_fruit.js jddj_fruit_collectWater.js jddj_getPoints.js jddj_plantBeans.js"
-my_scripts_list_5="adolf_ETIP.js adolf_haier.js monk_shop_add_to_car.js"
+my_scripts_list_5="monk_shop_add_to_car.js"
 my_scripts_list_6="dd_fruit.js"
 
 ##############################  随  机  函  数  ##############################
