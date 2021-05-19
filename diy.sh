@@ -11,7 +11,7 @@ fi
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="monk_ichenzhe monk_normal LongZhuZhu jddj wxxk DD"
+author_list="monk_ichenzhe monk_normal LongZhuZhu jddj wxxk DD member"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
