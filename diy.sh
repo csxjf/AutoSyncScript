@@ -24,6 +24,7 @@ scripts_base_url_3=https://raw.githubusercontent.com/csxjf/AutoSyncScript/longzh
 scripts_base_url_4=https://raw.githubusercontent.com/csxjf/AutoSyncScript/passerby-b/
 scripts_base_url_5=https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/car/
 scripts_base_url_6=https://raw.githubusercontent.com/passerby-b/didi_fruit/main/
+scripts_base_url_7=https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/member/
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
@@ -35,6 +36,7 @@ my_scripts_list_3="jd_super_redrain.js jd_half_redrain.js"
 my_scripts_list_4="jddj_bean.js jddj_cookie.js jddj_fruit.js jddj_fruit_collectWater.js jddj_getPoints.js jddj_plantBeans.js"
 my_scripts_list_5="monk_shop_add_to_car.js"
 my_scripts_list_6="dd_fruit.js"
+my_scripts_list_7="adolf_oneplus.js adolf_flp.js monk_pasture.js"
 
 ##############################  随  机  函  数  ##############################
 rand() {
