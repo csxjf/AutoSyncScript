@@ -86,9 +86,11 @@ for author in $author_list; do
 done
 
 ## 京东试用脚本添加取关定时任务
-[ -f ${ScriptsDir}/jd_try.js ] && cat ${ListCron} | grep "5 10 \* \* \* bash jd jd_unsubscribe" -q
+grep -q "（jd_try.js）" ${ListCron} && sed -i "/（jd_try.js）/d" ${ListCron} &&  sed -ie "/5 10 \* \* \* bash jd jd_unsubscribe/d" ${ListCron} ## 修复试用脚本重复通知定时任务的错误
+
+[ -f ${ScriptsDir}/jd_try.js ] && grep -q "5 10 \* \* \* bash jd jd_unsubscribe" ${ListCron}
 if [ $? -ne 0 ]; then
-  echo -e '\n# 京东试用脚本（jd_try.js）添加的取关定时任务\n5 10 * * * bash jd jd_unsubscribe' >>${ListCron}
+  echo -e '\n# 京东试用脚本添加的取关定时任务\n5 10 * * * bash jd jd_unsubscribe' >>${ListCron}
 fi
 
 ##############################  删  除  失  效  的  活  动  脚  本  ##############################
