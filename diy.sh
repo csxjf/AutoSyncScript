@@ -18,13 +18,13 @@ author_list="monk_ichenzhe monk_normal LongZhuZhu jddj monk_car DiDi_fruit monk_
 # 1.从作者库中随意挑选一个脚本地址，每个作者的地址添加一个即可，无须重复添加
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
 
-scripts_base_url_1=https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/i-chenzhe/
-scripts_base_url_2=https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/normal/
-scripts_base_url_3=https://raw.githubusercontent.com/csxjf/AutoSyncScript/longzhuzhu/qx/
-scripts_base_url_4=https://raw.githubusercontent.com/csxjf/AutoSyncScript/passerby-b/
-scripts_base_url_5=https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/car/
-scripts_base_url_6=https://raw.githubusercontent.com/passerby-b/didi_fruit/main/
-scripts_base_url_7=https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/member/
+scripts_base_url_1=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/i-chenzhe/
+scripts_base_url_2=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/normal/
+scripts_base_url_3=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/longzhuzhu/qx/
+scripts_base_url_4=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/passerby-b/
+scripts_base_url_5=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/car/
+scripts_base_url_6=https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/didi_fruit/main/
+scripts_base_url_7=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/member/
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
