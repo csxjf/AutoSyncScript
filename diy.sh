@@ -11,7 +11,7 @@ fi
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="monk_ichenzhe monk_normal LongZhuZhu jddj monk_car DiDi_fruit monk_member"
+author_list="monk_ichenzhe monk_normal LongZhuZhu jddj monk_car DiDi_fruit monk_member ppdz"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
@@ -25,6 +25,7 @@ scripts_base_url_4=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/A
 scripts_base_url_5=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/car/
 scripts_base_url_6=https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/didi_fruit/main/
 scripts_base_url_7=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/member/
+scripts_base_url_8=https://ghproxy.com/https://raw.githubusercontent.com/panghu999/panghu/master/
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
@@ -37,6 +38,7 @@ my_scripts_list_4="jddj_bean.js jddj_cookie.js jddj_fruit.js jddj_fruit_collectW
 my_scripts_list_5="monk_shop_add_to_car.js"
 my_scripts_list_6="dd_fruit.js"
 my_scripts_list_7="adolf_oneplus.js adolf_flp.js monk_pasture.js"
+my_scripts_list_7="jd_ppdz.js"
 
 ##############################  随  机  函  数  ##############################
 rand() {
