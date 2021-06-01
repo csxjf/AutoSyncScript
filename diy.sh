@@ -38,7 +38,7 @@ my_scripts_list_4="jddj_bean.js jddj_cookie.js jddj_fruit.js jddj_fruit_collectW
 my_scripts_list_5="monk_shop_add_to_car.js"
 my_scripts_list_6="dd_fruit.js"
 my_scripts_list_7="adolf_oneplus.js adolf_flp.js monk_pasture.js"
-my_scripts_list_7="jd_ppdz.js"
+my_scripts_list_8="jd_ppdz.js"
 
 ##############################  随  机  函  数  ##############################
 rand() {
