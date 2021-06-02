@@ -33,7 +33,7 @@ scripts_base_url_8=https://ghproxy.com/https://raw.githubusercontent.com/panghu9
 # 将相应作者的脚本填写到以下变量中
 my_scripts_list_1="z_fanslove.js z_health_community.js z_health_energy.js z_marketLottery.js z_shae.js z_carnivalcity.js z_shop_captain.js z_xmf.js z_mother_jump.js z_wish.js z_city_cash.js"
 my_scripts_list_2="monk_inter_shop_sign.js monk_shop_follow_sku.js adolf_oppo.js adolf_newInteraction.js adolf_star.js adolf_pk.js adolf_martin.js adolf_urge.js adolf_jxhb.js adolf_superbox.js"
-my_scripts_list_3="jd_super_redrain.js jd_half_redrain.js"
+my_scripts_list_3="jd_super_redrain.js jd_half_redrain.js long_hby_lottery.js"
 my_scripts_list_4="jddj_bean.js jddj_cookie.js jddj_fruit.js jddj_fruit_collectWater.js jddj_getPoints.js jddj_plantBeans.js"
 my_scripts_list_5="monk_shop_add_to_car.js"
 my_scripts_list_6="dd_fruit.js"
