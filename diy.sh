@@ -11,21 +11,27 @@ fi
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="monk_ichenzhe monk_normal LongZhuZhu jddj monk_car DiDi_fruit monk_member ppdz"
+author_list="monk_ichenzhe monk_normal LongZhuZhu jddj monk_car DiDi_fruit monk_member panghu999"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
+if [[ ${EnableExtraShellProxyDownload} == true ]]; then
+  DownloadJudgment=${ExtraShellProxyUrl}
+else
+  DownloadJudgment=
+fi
+
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
 # 1.从作者库中随意挑选一个脚本地址，每个作者的地址添加一个即可，无须重复添加
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
 
-scripts_base_url_1=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/i-chenzhe/
-scripts_base_url_2=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/normal/
-scripts_base_url_3=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/longzhuzhu/qx/
-scripts_base_url_4=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/passerby-b/
-scripts_base_url_5=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/car/
-scripts_base_url_6=https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/didi_fruit/main/
-scripts_base_url_7=https://ghproxy.com/https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/member/
-scripts_base_url_8=https://ghproxy.com/https://raw.githubusercontent.com/panghu999/panghu/master/
+scripts_base_url_1=${DownloadJudgment}https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/i-chenzhe/
+scripts_base_url_2=${DownloadJudgment}https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/normal/
+scripts_base_url_3=${DownloadJudgment}https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/
+scripts_base_url_4=${DownloadJudgment}https://raw.githubusercontent.com/csxjf/AutoSyncScript/passerby-b/
+scripts_base_url_5=${DownloadJudgment}https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/car/
+scripts_base_url_6=${DownloadJudgment}https://raw.githubusercontent.com/passerby-b/didi_fruit/main/
+scripts_base_url_7=${DownloadJudgment}https://raw.githubusercontent.com/csxjf/AutoSyncScript/monk/member/
+scripts_base_url_8=${DownloadJudgment}https://raw.githubusercontent.com/panghu999/panghu/master/
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
@@ -33,12 +39,12 @@ scripts_base_url_8=https://ghproxy.com/https://raw.githubusercontent.com/panghu9
 # 将相应作者的脚本填写到以下变量中
 my_scripts_list_1="z_fanslove.js z_health_community.js z_health_energy.js z_marketLottery.js z_shae.js z_carnivalcity.js z_shop_captain.js z_xmf.js z_mother_jump.js z_wish.js z_city_cash.js"
 my_scripts_list_2="monk_inter_shop_sign.js monk_shop_follow_sku.js adolf_oppo.js adolf_newInteraction.js adolf_star.js adolf_pk.js adolf_martin.js adolf_urge.js adolf_jxhb.js adolf_superbox.js"
-my_scripts_list_3="jd_super_redrain.js jd_half_redrain.js long_hby_lottery.js"
+my_scripts_list_3="long_half_redrain.js long_hby_lottery.js long_super_redrain.js"
 my_scripts_list_4="jddj_bean.js jddj_cookie.js jddj_fruit.js jddj_fruit_collectWater.js jddj_getPoints.js jddj_plantBeans.js"
 my_scripts_list_5="monk_shop_add_to_car.js"
 my_scripts_list_6="dd_fruit.js"
 my_scripts_list_7="adolf_oneplus.js adolf_flp.js monk_pasture.js"
-my_scripts_list_8="jd_ppdz.js"
+my_scripts_list_8="jd_chb.js jd_dphby.js jd_gcip.js jd_jxgc.js jd_kanjia.js jd_ppdz.js jd_qqtmy.js jd_ry618.js jd_sq.js jd_sqdyj.js jd_tyt.js jd_wsdlb.js jd_xcpp.js jd_xsmh.js jd_yqyl.js"
 
 ##############################  随  机  函  数  ##############################
 rand() {
@@ -88,13 +94,10 @@ for author in $author_list; do
 done
 
 ## 京东试用脚本添加取关定时任务
-grep -q "（jd_try.js）" ${ListCron} && sed -i "/（jd_try.js）/d" ${ListCron} &&  sed -ie "/5 10 \* \* \* bash jd jd_unsubscribe/d" ${ListCron} ## 修复试用脚本重复通知定时任务的错误
-
 [ -f ${ScriptsDir}/jd_try.js ] && grep -q "5 10 \* \* \* bash jd jd_unsubscribe" ${ListCron}
 if [ $? -ne 0 ]; then
-  echo -e '\n# 京东试用脚本添加的取关定时任务\n5 10 * * * bash jd jd_unsubscribe' >>${ListCron}
+  echo -e '# 京东试用脚本添加的取关定时任务\n5 10 * * * bash jd jd_unsubscribe' >>${ListCron}
 fi
-
 ##############################  删  除  失  效  的  活  动  脚  本  ##############################
 ## 删除旧版本失效的活动示例： rm -rf ${ScriptsDir}/jd_test.js
 rm -rf ${ScriptsDir}/jd_live_lottery_social.js
