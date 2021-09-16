@@ -1,4 +1,4 @@
-name:Waikiki_ninja-sync
+name: Waikiki_ninja-sync
 on:
   schedule:
     - cron: '1 */3 * * *'
