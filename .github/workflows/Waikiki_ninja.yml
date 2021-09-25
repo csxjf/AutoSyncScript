@@ -23,6 +23,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/Waikkii/Waikiki_ninja.git"
-          source_branch: "main"
+          source_branch: "master"
           destination_branch: "Waikiki_ninja"
           github_token: ${{ secrets.PAT }}
