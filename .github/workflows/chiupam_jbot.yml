@@ -1,7 +1,7 @@
 name: chiupam_jbot-sync
 on:
   schedule:
-    - cron: '1 */3 * * *'
+    - cron: '1 5 * * *'
   workflow_dispatch:
   watch:
     types: started
@@ -23,6 +23,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/chiupam/JD_Diy.git"
-          source_branch: "master"
+          source_branch: "main"
           destination_branch: "chiupam_jbot"
           github_token: ${{ secrets.PAT }}
