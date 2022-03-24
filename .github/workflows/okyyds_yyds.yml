@@ -24,5 +24,5 @@ jobs:
         with:
           source_repo: "https://github.com/okyyds/yyds.git"
           source_branch: "master"
-          destination_branch: "ZhiYi-N"
+          destination_branch: "okyyds_yyds"
           github_token: ${{ secrets.PAT }}
