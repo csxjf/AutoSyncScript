@@ -1,4 +1,4 @@
-name: gys619
+name: msechen_jdrain
 on:
   schedule:
     - cron: '1 3 * * *'
@@ -6,7 +6,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: gys619
+    types: msechen_jdrain
 jobs:
   repo-sync:
     env:
@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: gys619
+      - name: msechen_jdrain
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/gys619/Absinthe.git"
+          source_repo: "https://github.com/msechen/jdrain.git"
           source_branch: "main"
-          destination_branch: "gys619"
+          destination_branch: "msechen_jdrain"
           github_token: ${{ secrets.PAT }}
