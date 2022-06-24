@@ -1,0 +1,32 @@
+name: TVBoxOSC
+-sync
+on:
+  schedule:
+    - cron: '1 6 * * *'
+  workflow_dispatch:
+  watch:
+    types: started
+  repository_dispatch:
+    types: sync-TVBoxOSC
+-GithubSync
+jobs:
+  repo-sync:
+    env:
+      PAT: ${{ secrets.PAT }} 
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: sync TVBoxOSC
+-GithubSync
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/CatVodTVOfficial/TVBoxOSC.git"
+          source_branch: "main"
+          destination_branch: "TVBoxOSC
+"
+          github_token: ${{ secrets.PAT }}
