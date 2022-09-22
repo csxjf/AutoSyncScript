@@ -1,7 +1,7 @@
 name: okyyds_yyds
 on:
-  schedule:
-    - cron: '1 4 9 9 9'
+#  schedule:
+ #   - cron: '1 4 9 9 9'
   workflow_dispatch:
   watch:
     types: started
