@@ -1,7 +1,7 @@
 name: shufflewzc_faker3-sync
 on:
-  schedule:
-    - cron: '3 3 * * *'
+#  schedule:
+#    - cron: '3 3 * * *'
   workflow_dispatch:
   watch:
     types: started
