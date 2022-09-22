@@ -1,7 +1,7 @@
 name: chiupam_jbot-sync
 on:
-  schedule:
-    - cron: '1 5 * * *'
+#  schedule:
+#    - cron: '1 5 * * *'
   workflow_dispatch:
   watch:
     types: started
